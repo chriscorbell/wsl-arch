@@ -10,3 +10,4 @@ This script does the following for you:
 - Prompts you to set a password for the new non-root user
 - Sets the new non-root user you created as the default user in `/etc/wsl.conf`
 - Installs `sudo` package and sets up sudo access for the wheel group in `/etc/sudoers`
+- Final step shuts down the virtual environment so that the changes to `/etc/wsl.conf` take effect when you reattach to it via `wsl -d archlinux`
