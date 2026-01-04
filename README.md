@@ -11,3 +11,15 @@ This script does the following for you:
 - Sets the new non-root user you created as the default user in `/etc/wsl.conf`
 - Installs `sudo` package and sets up sudo access for the wheel group in `/etc/sudoers`
 - Final step shuts down the virtual environment so that the changes to `/etc/wsl.conf` take effect when you reattach to it via `wsl -d archlinux`
+
+## Instructions
+
+```bash
+git clone https://github.com/chriscorbell/wsl-arch
+cd wsl-arch
+./wsl-arch.sh
+```
+Or alternatively (don't forget to always read and verify the source before doing this):
+```
+curl https://raw.githubusercontent.com/chriscorbell/wsl-arch/main/wsl-arch.sh >> wsl-arch.sh && chmod +x wsl-arch.sh && ./wsl-arch.sh
+```
