@@ -16,8 +16,7 @@ This script does the following for you:
 
 ```bash
 git clone https://github.com/chriscorbell/wsl-arch
-cd wsl-arch
-./wsl-arch.sh
+./wsl-arch/wsl-arch.sh
 ```
 Or alternatively (don't forget to always read and verify the source before doing this):
 ```
