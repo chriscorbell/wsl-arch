@@ -37,9 +37,9 @@ EOF
 echo -e "${NOCOLOR}"
 
 # Set en_US.UTF-8 locale
-sed -i 's/^#\s*\(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen
+sed -i 's/^[#[:space:]]*\(en_US.UTF-8[[:space:]]\+UTF-8\)/\1/' /etc/locale.gen
 locale-gen
-localectl set-locale LANG=en_US.UTF-8
+echo 'LANG=en_US.UTF-8' | tee /etc/locale.conf
 
 pacman -Syu --noconfirm sudo nano xdg-utils
 
