@@ -136,6 +136,6 @@ EOF
 echo -e "${NOCOLOR}"
 
 print_step "Shutting down virtual environment"
-print_success "Reattach via "wsl -d archlinux" to take effect"
+print_success "Reattach via 'wsl -d archlinux' to take effect"
 
 poweroff
